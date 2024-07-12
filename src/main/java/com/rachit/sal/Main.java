@@ -34,7 +34,7 @@ public class Main {
         int pn = sc.nextInt();
 
         for(int i=0; i<pn; i++){
-            players.add(new Player(sc.next(), i+1));
+            players.add(new Player(sc.next()));
         }
 
         Board board = new Board(snakes, ladders, players);

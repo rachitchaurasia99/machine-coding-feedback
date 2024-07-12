@@ -1,19 +1,21 @@
 package com.rachit.sal.model;
 
+import java.util.UUID;
+
 public class Player {
     private String name;
-    private int id;
+    private String id;
     private int position;
 
-    public Player(String name, int id){
+    public Player(String name){
         this.name = name;
-        this.id = id;
+        this.id = UUID.randomUUID().toString();
         this.position = 0;
     }
 
     public String getName() { return name; }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
